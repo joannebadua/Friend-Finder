@@ -78,7 +78,7 @@ You should save your application's data inside of app/data/friends.js as an arra
     ]
 }
 
-Nester Forloop?
+Nester Forloop? sorting data comparing it to others. 
 
 Determine the user's most compatible friend using the following as a guide:
 
