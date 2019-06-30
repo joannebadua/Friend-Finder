@@ -1,16 +1,8 @@
 # Friend-Finder
 
+This is the compatibility-based "FriendFinder" application, a mentorship-matching app. The app will take in results from a user's response to 10 survey quesstions, tracking whether the user agrees or disagrees with a question on a scale of 1 to 5.  The app compares the answers with those from other users also seeking a mentor/mentee, and then displays the name and picture of the user with the best overall match.
 
-
-This is the compatibility-based "FriendFinder" application, a dating app. The app will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
-
-Express to handle routing.
-It is deployed to Heroku so other users can fill it out.
-
-
-The survey has 10 questions. Each answer is on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
-
-
+Express to handle routing. It is deployed to Heroku so other users can fill it out.
 Your server.js file should require the basic npm packages we've used in class: express, body-parser and path.
 
 
@@ -113,3 +105,15 @@ After completing the homework please add the piece to your portfolio. Make sure 
 One More Thing
 If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
 Good Luck!
+
+### Technology Used
+* [Heroku] (https://www.heroku.com/about)
+* [Express.js] (http://expressjs.com/en/guide/routing.html)
+* [NODE.js](https://nodejs.org/en/about/) 
+* [My SQL](https://www.mysql.com/about/)
+* [Javascript (JS)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+
+
+### Author
+* Joey Badua* - [Friend-Finder](https://github.com/joannebadua)
