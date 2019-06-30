@@ -1,44 +1,14 @@
 # Friend-Finder
 
-Friend Finder - Node and Express Servers
-
-Overview
-In this activity, you'll build a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
-You will use Express to handle routing. Make sure you deploy your app to Heroku so other users can fill it out.
-
-Before You Begin
 
 
-Check out this demo version of the site. Use this as a model for how we expect your assignment look and operate.
+This is the compatibility-based "FriendFinder" application, a dating app. The app will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+
+Express to handle routing.
+It is deployed to Heroku so other users can fill it out.
 
 
-Create a folder called FriendFinder. Inside the folder, organize your directories so it matches the following:
-FriendFinder
-  - .gitignore
-  - app
-    - data
-      - friends.js
-    - public
-      - home.html
-      - survey.html
-    - routing
-      - apiRoutes.js
-      - htmlRoutes.js
-  - node_modules
-  - package.json
-  - server.js
-
-
-
-Submission on BCS
-
-Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
-
-
-Instructions
-
-
-Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
+The survey has 10 questions. Each answer is on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
 
 
 Your server.js file should require the basic npm packages we've used in class: express, body-parser and path.
