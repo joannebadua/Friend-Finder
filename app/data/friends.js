@@ -11,7 +11,16 @@ var friendsArray = [
       userEmail: "law1234",
       practiceArea: "000-000-0000",
       cityState: "Honolulu, HI",
-      // answers: [1,3,4,2,2,5,2,3,4,1]
+      answers: [1,3,4,2,2,5,2,3,4,1]
+
+    },
+    {
+      userName: "esquire2",
+      phoneNumber: "esquire@example.com",
+      userEmail: "law1234",
+      practiceArea: "000-000-0000",
+      cityState: "Honolulu, HI",
+      answers: [1,3,4,3,4,5,2,3,4,5]
 
     }
   ];

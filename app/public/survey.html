@@ -172,9 +172,8 @@
                 <label for="exampleFormControlFile1">Example file input</label>
                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
               </div> -->
-              <button type="submit" class="btn btn-primary submit" id="end-survey">Submit</button>
             </form>
-
+            <button class="btn btn-primary submit" id="end-survey">Submit</button>
           </div>
         </div>
       </div>
@@ -201,24 +200,23 @@
   // Our api recognizes the route (/api/list)... and then runs the associated code (found in api-routes.js).
   // In this case the associated code "saves" the data to the friends.js file 
 
-  $(".end-survey").on("click", function(event) {
+  $("#end-survey").on("click", function(event) {
+    console.log("we got clicked", $("#ques-one").val()[0]);
     event.preventDefault();
 
     // Here we grab the form elements
     var answers = [
-      $("#ques-one").val().trim(),
-      $("#ques-two").val().trim(),
-      $("#ques-three").val().trim(),
-      $("#ques-four").val().trim(),
-      $("#ques-five").val().trim(),
-      $("#ques-six").val().trim(),
-      $("#ques-seven").val().trim(),
-      $("#ques-eight").val().trim(),
-      $("#ques-nine").val().trim(),
-      $("#ques-ten").val().trim(),
+      $("#ques-one").val()[0],
+      $("#ques-two").val()[0],
+      $("#ques-three").val()[0],
+      $("#ques-four").val()[0],
+      $("#ques-five").val()[0],
+      $("#ques-six").val()[0],
+      $("#ques-seven").val()[0],
+      $("#ques-eight").val()[0],
+      $("#ques-nine").val()[0],
+      $("#ques-ten").val()[0]
     ];
-
-    var answersArray = [];
 
     var newFriend = {
         userName: $("#survey-name").val().trim(),
@@ -226,7 +224,7 @@
       userEmail: $("#survey-email").val().trim(),
       practiceArea: $("#survey-area").val().trim(),
       cityState: $("#survey-location").val().trim(),
-      answers: []
+      answers: answers
     };
 
     console.log(newFriend);
@@ -238,10 +236,10 @@
     // depending on if a tables is available or not.
 
     $.post("/api/friends", newFriend,
-      function(data) {
-
+      function(bestFriend) {
+        console.log("what we get", bestFriend);
         // If a table is available... tell user they are booked.
-        if (data) {
+        if (bestFriend) {
           alert("Yay! You are officially in the mentor-mentee program!");
         }
 

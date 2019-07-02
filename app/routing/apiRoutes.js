@@ -10,15 +10,39 @@ var friendsData = require("../data/friends");
 // ===============================================================================
 // ROUTING
 // ===============================================================================
-module.exports = function(app) {
-    app.get("api/friends", function(req, res) {
+module.exports = function (app) {
+    app.get("/api/friends", function (req, res) {
         res.json(friendsData);
     });
 
-    app.post("api/friends", function(req, res) {
+    app.post("/api/friends", function (req, res) {
         console.log(req.body)
-   //nested forloop stuff - skip for now //refer to apiRoutes.js in hot resto
-        //friendsData.push(req.body);
+        var newFriendTotal = 0;
+        for (let index = 0; index < req.body.answers.length; index++) {
+            newFriendTotal += parseInt(req.body.answers[index]);
+        //subtract from old friend's total in the array 
+        }
+        console.log("hi", newFriendTotal);
+        var smallDifference = 10000;
+        var bestFriend = {};
+        for (let j = 0; j < friendsData.length; j++) {
+                // console.log("old friends", friendsData[j]);
+                //only want to add oldfriend here
+                var oldFriendTotal = 0;
+                for (let k = 0; k < friendsData[j].answers.length; k++) {
+                    oldFriendTotal += parseInt(friendsData[j].answers[k]);
+                }    
+                console.log("tally old friens", oldFriendTotal);
+                console.log("friends difference", Math.abs(newFriendTotal - oldFriendTotal));
+                if (smallDifference > Math.abs(newFriendTotal - oldFriendTotal)) {
+                     smallDifference = Math.abs(newFriendTotal - oldFriendTotal) 
+                     bestFriend = friendsData[j];   
+                }
+        };
+        console.log("your best friend", bestFriend);
+
+        friendsData.push(req.body);
+        res.json(bestFriend);
     });
-    
+
 };
