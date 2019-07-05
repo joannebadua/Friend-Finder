@@ -1,0 +1,26 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "This is the compatibility-based \"FriendFinder\" application, a mentorship-matching app. The app will take in results from a user's response to 10 survey quesstions, tracking whether the user agrees or disagrees with a question on a scale of 1 to 5.  The app compares the answers with those from other users also seeking a mentor/mentee, and then displays the name and picture of the user with the best overall match.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joannebadua/Friend-Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joannebadua/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/joannebadua/Friend-Finder#readme"
+}
