@@ -4,8 +4,8 @@
   "description": "This is the compatibility-based \"FriendFinder\" application, a mentorship-matching app. The app will take in results from a user's response to 10 survey quesstions, tracking whether the user agrees or disagrees with a question on a scale of 1 to 5.  The app compares the answers with those from other users also seeking a mentor/mentee, and then displays the name and picture of the user with the best overall match.",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "path": "^0.12.7"
   },
   "devDependencies": {},
